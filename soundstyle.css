@@ -1,0 +1,113 @@
+body {
+  font-family: Verdana, sans-serif;
+  margin: 5;
+  background: white;
+}
+
+/*background*/
+#ticketVid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*return button*/
+.return {
+  padding: 15px;
+}
+
+.tickreturn {
+  display: block;
+  width: 98%;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  background: rgb(18, 17, 36);
+  border: 7px;
+  border-style: outset;
+  border-color: rgb(18, 17, 36);
+  border-radius: 15px;
+  color: white;
+}
+
+.tickreturn:active {
+  border-style: inset;
+}
+
+/*the track*/
+.train1 {
+  padding-top: 20px;
+}
+
+/*the background of the track*/
+#player-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 6.25rem;
+  background-image: url("https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/trackss.png?v=1704905741103");
+  background-repeat: repeat;
+  background-size: 500px;
+  background-position: center;
+  color: black;
+}
+
+/*the play button*/
+#player-container #play-pause {
+  cursor: pointer;
+  text-indent: -999999px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  float: bottom;
+  padding: 10px 0px;
+  z-index: 10;
+  background-image: url("https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/play.png?v=1704906805454");
+  background-repeat: no-repeat !important;
+  background-position: bottom;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px;
+  background-image: url("https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/play.png?v=1704906805454");
+}
+
+/*images for the play and pause buttons*/
+.play {
+  background-image: url("https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/play.png?v=1704906805454");
+}
+
+.pause {
+  background-image: url("https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/play.png?v=1704906805454") !important;
+}
+
+/*the timeline of the audio clip*/
+#timeline {
+  width: 100%;
+  height: 5px;
+  background: transparent;
+  float: left;
+  z-index: 9;
+  position: absolute;
+}
+
+/*the scrub - showing how much of the audio has been played*/
+#scrub {
+  height: 5px;
+  background-color: transparent;
+  border: none;
+  float: left;
+}
+
+/*the playhead*/
+#playhead {
+  width: 500px;
+  height: 100px;
+  background-image: url("https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/trainnnn.png?v=1704904530409");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px;
+}

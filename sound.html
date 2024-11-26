@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="soundstyle.css" />
+  </head>
+  <body>
+    <!-- Video Background -->
+    <video autoplay muted loop id="ticketVid">
+      <source
+        src="train.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <!-- Audio Track -->
+    <div class="train1">
+      <audio id="track">
+        <source src="" type="audio/mpeg" />
+      </audio>
+
+      <div id="player-container">
+        <div id="timeline" data-ol-has-click-handler="">
+          <div id="scrub"></div>
+          <div id="playhead"></div>
+        </div>
+        <div
+          id="play-pause"
+          class="play"
+          data-audio="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/train%203.mp3?v=1704818833199"
+        >
+          Play
+        </div>
+      </div>
+    </div>
+
+    <!-- button to go back to homepage -->
+    <div class="return">
+      <a href="index.html" class="tickreturn">Go Back</a>
+    </div>
+
+    <script src="soundscript.js"></script>
+  </body>
+</html>

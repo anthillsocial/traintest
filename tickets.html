@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    
+    <!-- Video Background -->
+<video autoplay muted loop id="ticketVid">
+  <source src="https://cdn.glitch.me/059f3b3f-e7ee-491d-810d-05fe3a619f38/F61A702F-B29B-4015-BAD5-8E722F6CD999.mp4?v=1704553879120" type="video/mp4">
+</video>
+    
+    <!-- Audio Background -->
+    <audio src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/train.mp3?v=1704909036527" autoplay loop></audio>
+    
+    <!-- Setting all images as modals that can be clicked and expanded -->
+    
+    <!-- row 1 -->
+    <div class="row">
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/220922.png?v=1701167669181"
+          style="width: 100%"
+          onclick="openModal();currentSlide(1)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/031022.png?v=1701167669902"
+          style="width: 100%"
+          onclick="openModal();currentSlide(2)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/201022.png?v=1701167674329"
+          style="width: 100%"
+          onclick="openModal();currentSlide(3)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/161122.png?v=1701167672177"
+          style="width: 100%"
+          onclick="openModal();currentSlide(4)"
+          class="cursor"
+        />
+      </div>
+    </div>
+
+    <!-- row 2 -->
+    <div class="row">
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/100123.png?v=1701167670590"
+          style="width: 100%"
+          onclick="openModal();currentSlide(5)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/120123.png?v=1701167671399"
+          style="width: 100%"
+          onclick="openModal();currentSlide(6)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/170123.png?v=1701167673520"
+          style="width: 100%"
+          onclick="openModal();currentSlide(7)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/190123%20blood.png?v=1704807079778"
+          style="width: 100%"
+          onclick="openModal();currentSlide(8)"
+          class="cursor"
+        />
+      </div>
+    </div>
+
+    <!-- row 3 -->
+    <div class="row">
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/240123.png?v=1703696338928"
+          style="width: 100%"
+          onclick="openModal();currentSlide(9)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/310123.png?v=1703696315146"
+          style="width: 100%"
+          onclick="openModal();currentSlide(10)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/020223.png?v=1703696316869"
+          style="width: 100%"
+          onclick="openModal();currentSlide(11)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/070223.png?v=1703696322387"
+          style="width: 100%"
+          onclick="openModal();currentSlide(12)"
+          class="cursor"
+        />
+      </div>
+    </div>
+
+    <!-- row 4 -->
+    <div class="row">
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/140223.png?v=1703696329601"
+          style="width: 100%"
+          onclick="openModal();currentSlide(13)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/160223%20blood.png?v=1704807075473"
+          style="width: 100%"
+          onclick="openModal();currentSlide(14)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/210223.png?v=1703696334472"
+          style="width: 100%"
+          onclick="openModal();currentSlide(15)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/230223.png?v=1703696336117"
+          style="width: 100%"
+          onclick="openModal();currentSlide(16)"
+          class="cursor"
+        />
+      </div>
+    </div>
+
+    <!-- row 5 -->
+    <div class="row">
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/020323.png?v=1703696318325"
+          style="width: 100%"
+          onclick="openModal();currentSlide(17)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/070323.png?v=1703696323924"
+          style="width: 100%"
+          onclick="openModal();currentSlide(18)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/090323.png?v=1703696325540"
+          style="width: 100%"
+          onclick="openModal();currentSlide(19)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/140323.png?v=1703696330795"
+          style="width: 100%"
+          onclick="openModal();currentSlide(20)"
+          class="cursor"
+        />
+      </div>
+    </div>
+
+    <!-- row 6 -->
+    <div class="row">
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/230523%20burned.png?v=1704807086113"
+          style="width: 100%"
+          onclick="openModal();currentSlide(21)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/260523%20burned.png?v=1704808943798"
+          style="width: 100%"
+          onclick="openModal();currentSlide(22)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/300523.png?v=1703696313786"
+          style="width: 100%"
+          onclick="openModal();currentSlide(23)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/060623.png?v=1703696321117"
+          style="width: 100%"
+          onclick="openModal();currentSlide(24)"
+          class="cursor"
+        />
+      </div>
+    </div>
+
+    <!-- row 7 -->
+    <div class="row">
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/090623.png?v=1703696327094"
+          style="width: 100%"
+          onclick="openModal();currentSlide(25)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/260923.png?v=1703696341630"
+          style="width: 100%"
+          onclick="openModal();currentSlide(26)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/031023.png?v=1703696319612"
+          style="width: 100%"
+          onclick="openModal();currentSlide(27)"
+          class="cursor"
+        />
+      </div>
+      <div class="column hover">
+        <img
+          src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/101023.png?v=1703696328426"
+          style="width: 100%"
+          onclick="openModal();currentSlide(28)"
+          class="cursor"
+        />
+      </div>
+    </div>
+    
+    <!-- open and close function -->
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        
+        <!-- the modals - what the images will look like once they are clicked on -->
+        
+        <!-- row 1 -->
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/220922.png?v=1701167669181"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/031022.png?v=1701167669902"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/201022.png?v=1701167674329"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/161122.png?v=1701167672177"
+            style="width: 100%"
+          />
+        </div>
+
+        <!-- row 2 -->
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/100123.png?v=1701167670590"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/120123.png?v=1701167671399"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/170123.png?v=1701167673520"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/190123%20blood.png?v=1704807079778"
+            style="width: 100%"
+          />
+        </div>
+
+        <!-- row 3 -->
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/240123.png?v=1703696338928"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/310123.png?v=1703696315146"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/020223.png?v=1703696316869"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/070223.png?v=1703696322387"
+            style="width: 100%"
+          />
+        </div>
+
+        <!-- row 4 -->
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/140223.png?v=1703696329601"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/160223%20blood.png?v=1704807075473"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/210223.png?v=1703696334472"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/230223.png?v=1703696336117"
+            style="width: 100%"
+          />
+        </div>
+
+        <!-- row 5 -->
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/020323.png?v=1703696318325"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/070323.png?v=1703696323924"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/090323.png?v=1703696325540"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/140323.png?v=1703696330795"
+            style="width: 100%"
+          />
+        </div>
+
+        <!-- row 6 -->
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/230523%20burned.png?v=1704807086113"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/260523%20burned.png?v=1704808943798"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/300523.png?v=1703696313786"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/060623.png?v=1703696321117"
+            style="width: 100%"
+          />
+        </div>
+
+        <!-- row 7 -->
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/090623.png?v=1703696327094"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/260923.png?v=1703696341630"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/031023.png?v=1703696319612"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="tickets">
+          <img
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/101023.png?v=1703696328426"
+            style="width: 100%"
+          />
+        </div>
+
+        <div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- the smaller gallery that will be displayed once the modal is opened,
+              also contains the description of each image -->
+        
+        <!-- row 1 -->
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/220922.png?v=1701167669181"
+            style="width: 100%"
+            onclick="currentSlide(1)"
+            alt="22/09/22, 13:37, £7.00 // The first train ticket I ever bought."
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/031022.png?v=1701167669902"
+            style="width: 100%"
+            onclick="currentSlide(2)"
+            alt="03/10/22, 11:28, £8.30"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/201022.png?v=1701167674329"
+            style="width: 100%"
+            onclick="currentSlide(3)"
+            alt="20/10/22, 07:48, £10.80"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/161122.png?v=1701167672177"
+            style="width: 100%"
+            onclick="currentSlide(4)"
+            alt="16/11/22, 08:45, £10.80 // The hill I pass every time I walk from the station is unbearable. My apple watch sends me a notification,  worried that my average heart rate is increased."
+          />
+        </div>
+
+        <!-- row 2 -->
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/100123.png?v=1701167670590"
+            style="width: 100%"
+            onclick="currentSlide(5)"
+            alt="10/01/23, 12:30, £7.00 // New Year. New Term. New Me."
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/120123.png?v=1701167671399"
+            style="width: 100%"
+            onclick="currentSlide(6)"
+            alt="12/01/23, 09:37, £8.30"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/170123.png?v=1701167673520"
+            style="width: 100%"
+            onclick="currentSlide(7)"
+            alt="17/01/23, 12:43, £6.00 // A one-way ticket on account of my mum promising to pick me up after uni. Had to wait way too long for her in the cold. Can't wait till I get my own car."
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/190123%20blood.png?v=1704807079778"
+            style="width: 100%"
+            onclick="currentSlide(8)"
+            alt="19/01/23, 09:44, £8.30 // Mind the gap between the train and the platform."
+          />
+        </div>
+
+        <!-- row 3 -->
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/240123.png?v=1703696338928"
+            style="width: 100%"
+            onclick="currentSlide(9)"
+            alt="24/01/23, 12:42, £6.00"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/310123.png?v=1703696315146"
+            style="width: 100%"
+            onclick="currentSlide(10)"
+            alt="31/01/23, 12:38, £6.00"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/020223.png?v=1703696316869"
+            style="width: 100%"
+            onclick="currentSlide(11)"
+            alt="02/02/23, 09:39, £8.30"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/070223.png?v=1703696322387"
+            style="width: 100%"
+            onclick="currentSlide(12)"
+            alt="07/02/23, 12:39, £6.00"
+          />
+        </div>
+
+        <!-- row 4 -->
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/140223.png?v=1703696329601"
+            style="width: 100%"
+            onclick="currentSlide(13)"
+            alt="14/02/23, 12:45, £6.00"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/160223%20blood.png?v=1704807075473"
+            style="width: 100%"
+            onclick="currentSlide(14)"
+            alt="Between 2022 and 2023, 236 people took their own life on the British railways. A further 64 attempted but were unsuccessful."
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/210223.png?v=1703696334472"
+            style="width: 100%"
+            onclick="currentSlide(15)"
+            alt="21/02/23, 12:08, £6.00"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/230223.png?v=1703696336117"
+            style="width: 100%"
+            onclick="currentSlide(16)"
+            alt="23/02/23, 09:51, £8.30 // My bus got stuck in traffic. Almost missed my train. Bought the ticket as the train approached the platform. As I was running across the bridge to get to my train, the ticket flew out of my hand. Luckily, it got caught on the fence. Not a good day."
+          />
+        </div>
+
+        <!-- row 5 -->
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/020323.png?v=1703696318325"
+            style="width: 100%"
+            onclick="currentSlide(17)"
+            alt="02/03/23, 09:26, £8.30"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/070323.png?v=1703696323924"
+            style="width: 100%"
+            onclick="currentSlide(18)"
+            alt="07/03/23, 12:38, £6.00"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/090323.png?v=1703696325540"
+            style="width: 100%"
+            onclick="currentSlide(19)"
+            alt="09/03/23, 09:37, £8.80 // Price of Off-Peak Day Return tickets goes up from £8.30 to £8.80. A seemingly small change adds up overtime."
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/140323.png?v=1703696330795"
+            style="width: 100%"
+            onclick="currentSlide(20)"
+            alt="14/03/23, 12:44, £6.00 // Last day of first year. Time passed too quickly. Have no idea what to do with my life now."
+          />
+        </div>
+
+        <!-- row 6 -->
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/230523%20burned.png?v=1704807086113"
+            style="width: 100%"
+            onclick="currentSlide(21)"
+            alt="??????, ????, £11.40"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/260523%20burned.png?v=1704808943798"
+            style="width: 100%"
+            onclick="currentSlide(22)"
+            alt="26/05/23, 08:35, ???? // In January 2023 the fine for having an invalid ticket on British railways was raised from £20 to £100 - five times the original price. This is the first time the fine has been raised since 2005"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/300523.png?v=1703696313786"
+            style="width: 100%"
+            onclick="currentSlide(23)"
+            alt="30/05/23, 08:40, £11.40 // Uni ended two months ago but I got invited to take extra sessions. Got to work with cameras. Pretty cool. "
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/060623.png?v=1703696321117"
+            style="width: 100%"
+            onclick="currentSlide(24)"
+            alt="06/06/23, 08:45, £11.40"
+          />
+        </div>
+
+        <!-- row 7 -->
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/090623.png?v=1703696327094"
+            style="width: 100%"
+            onclick="currentSlide(25)"
+            alt="23/05/23, 08:44, £11.40"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/260923.png?v=1703696341630"
+            style="width: 100%"
+            onclick="currentSlide(26)"
+            alt="26/05/23, 08:43, £11.40"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/031023.png?v=1703696319612"
+            style="width: 100%"
+            onclick="currentSlide(27)"
+            alt="30/05/23, 09:12, £11.40 // Missed my train. The first bus didn't stop as it was too full; the second bus was 30 minutes late. Was too far to walk - had to take the next train."
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.global/059f3b3f-e7ee-491d-810d-05fe3a619f38/101023.png?v=1703696328426"
+            style="width: 100%"
+            onclick="currentSlide(28)"
+            alt="06/06/23, 08:41, £11.40 // The last time I took the train to uni. Have my own car now. Kinda miss the walks while listening to music."
+          />
+        </div>
+      </div>
+    </div>
+    
+    <!-- button to go back to homepage -->
+    <div class="return">
+      <a href="index.html" class ="tickreturn" >Go Back</a> 
+    </div>
+  </body>
+</html>

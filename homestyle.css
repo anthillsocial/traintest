@@ -1,0 +1,93 @@
+body{
+  background: white;
+  font-family: Verdana, sans-serif;
+}
+
+/*the bar at the top*/
+.topbar{
+  background: rgb(18, 17, 36);
+  height: 150px;
+  display:flex; 
+  justify-content:space-between;
+  align-items: center; 
+}
+
+.logo{
+  color: rgb(247, 217, 119);
+  font-size: 100px;
+  padding: 10px;
+  right: 5%;
+  position: absolute;
+}
+
+/*the time and date*/
+#datetime{
+  color: white;
+  left: 10%;
+  position: absolute;
+  font-size: 30px;
+}
+
+.warning{
+  color: rgb(247, 217, 119);
+  position: absolute;
+  font-size: 17px;
+  left: 75%;
+  top: 18%;
+}
+
+/*the bar on the side*/
+.sidebar{
+  background-color: rgb(111, 129, 166);
+  width: 200px;
+  height: 100%;
+  position: absolute;
+}
+
+.oyster{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.destination{
+  padding-left: 150px;
+  padding-top: 100px;
+  left: 10%;
+  position: absolute;
+}
+
+.popdest{
+  text-align: center;
+  padding-left: 60px;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+/*the links*/
+.button{
+  width: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.buttonlink{
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  background: rgb(18, 17, 36);
+  border: 7px;
+  border-style: outset;
+  border-color: rgb(18, 17, 36);
+  border-radius: 15px;
+  text-align: center;
+  width: 350px;
+  padding: 10px;
+}
+
+.buttonlink:active{
+  border-style: inset;
+}

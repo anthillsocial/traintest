@@ -1,0 +1,237 @@
+body {
+  background: black;
+  font-family: Verdana, sans-serif;
+}
+
+/*the background video*/
+#graphVid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*return button*/
+.return{
+  padding: 15px;
+}
+
+.tickreturn{
+  display: block;
+  width: 93%;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  background: rgb(18, 17, 36);
+  border: 7px;
+  border-style: outset;
+  border-color: rgb(18, 17, 36);
+  border-radius: 15px;
+  color: white;
+  bottom: 1%;
+}
+
+.tickreturn:active{
+  border-style: inset;
+}
+
+#title {
+  position: absolute; /*position has to be absolute for the elements to be movable*/
+  z-index: 10; /*z-index dictates what order the element will appear in*/
+  text-align: center;
+  cursor: move;
+  background-color: #30261f;
+  border-style: double;
+  border-color: #e6bda1;
+  border-width: 7px;
+  border-radius: 10px;
+  top: 73%;
+  left: 30%;
+  rotate: 5deg;
+}
+
+#titleheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  color: #ffffff;
+  font-size: 60px;
+}
+
+#warning {
+  position: absolute;
+  z-index: 12;
+  text-align: center;
+  cursor: move;
+  background-color: white;
+  border-style: solid;
+  border-color: #781313;
+  border-width: 7px;
+  border-radius: 100px;
+  top: 40%;
+  left: 40%;
+  rotate: 0deg;
+}
+
+#warningheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 11;
+  color: #781313;
+  font-size: 30px;
+  width: 300px;
+}
+
+/*graph 1 - with separate header and image*/
+#graph1{
+  position: absolute;
+  z-index: 8;
+  text-align: center;
+  cursor: move;
+  border: 10px;
+  border-style: groove;
+  border-color: #dbcdc8;
+  border-radius: 5px;
+  left: 15%;
+  top: 30%;
+  rotate: -7deg;
+}
+
+#graph11 {
+  position: absolute; /*position has to be absolute for the elements to be movable*/
+  z-index: 9; /*z-index dictates what order the element will appear in*/
+  text-align: center;
+  cursor: move;
+  background-color: #dbcdc8;
+  border-style: double;
+  border-color: #1f1a19;
+  border-width: 7px;
+  border-radius: 10px;
+  top: 40%;
+  left: 70%;
+  rotate: -2deg;
+}
+
+#graph11header {
+  padding: 10px;
+  cursor: move;
+  z-index: 9;
+  color: black;
+  font-size: 30px;
+}
+
+/*graph 2 - with separate header and image*/
+#graph2{
+  position: absolute;
+  z-index: 6;
+  text-align: center;
+  cursor: move;
+  border: 10px;
+  border-style: groove;
+  border-color: #6e5a4c;
+  border-radius: 5px;
+  top: 45%;
+  left: 5%;
+  rotate: 1deg;
+}
+
+#graph22 {
+  position: absolute;
+  z-index: 7;
+  text-align: center;
+  cursor: move;
+  background-color: #dbcdc8;
+  border-style: double;
+  border-color: #1f1a19;
+  border-width: 7px;
+  border-radius: 10px;
+  top: 5%;
+  left: 50%;
+  rotate: -5deg;
+}
+
+#graph22header {
+  padding: 10px;
+  cursor: move;
+  z-index: 7;
+  color: black;
+  font-size: 30px;
+}
+
+/*graph 3 - with separate header and image*/
+#graph3{
+  position: absolute;
+  z-index: 4;
+  text-align: center;
+  cursor: move;
+  border: 10px;
+  border-style: groove;
+  border-color: #6e5a4c;
+  border-radius: 5px;
+  top: 15%;
+  left: 60%;
+  rotate: 2deg;
+}
+
+#graph33 {
+  position: absolute;
+  z-index: 5;
+  text-align: center;
+  cursor: move;
+  background-color: #dbcdc8;
+  border-style: double;
+  border-color: #662020;
+  border-width: 7px;
+  border-radius: 10px;
+  top: 75%;
+  left: 50%;
+  rotate: 3deg;
+}
+
+#graph33header {
+  padding: 10px;
+  cursor: move;
+  z-index: 5;
+  color: black;
+  font-size: 30px;
+}
+
+/*graph 4 - with separate header and image*/
+#graph4{
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  cursor: move;
+  border: 10px;
+  border-style: groove;
+  border-color: #dbcdc8;
+  border-radius: 5px;
+  left: 60%;
+  top: 55%;
+  rotate: 5deg;
+}
+
+#graph44 {
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  cursor: move;
+  background-color: #dbcdc8;
+  border-style: double;
+  border-color: #662020;
+  border-width: 7px;
+  border-radius: 10px;
+  top: 17%;
+  left: 5%;
+  rotate: 0deg;
+}
+
+#graph44header {
+  padding: 10px;
+  cursor: move;
+  z-index: 3;
+  color: black;
+  font-size: 30px;
+}
